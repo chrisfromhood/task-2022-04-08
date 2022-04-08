@@ -1,0 +1,168 @@
+//custom variables
+$primary: #c29938;
+//import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.section-title__wrapper {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.h2-upper__span {
+  position: relative;
+  font-family: "montserret";
+  font-size: 20px;
+  line-height: 27px;
+  text-align: left;
+  color: #707070;
+  text-transform: uppercase;
+}
+
+.animate-line .h2-upper__span::before {
+  left: -80vw;
+}
+
+.h2-upper__span::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  left: -280vw;
+  bottom: -10px;
+  height: 3px;
+  background: -o-linear-gradient(338deg, #84b403 0, rgba(250, 248, 248, 0.01) 100%);
+  background: linear-gradient(112deg, #84b403 0, rgba(250, 248, 248, 0.01) 100%);
+  -webkit-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+
+.h2-title {
+  position: relative;
+  font-family: "montserret";
+  font-size: 40px;
+  line-height: 53px;
+  text-align: left;
+  color: #4e0003;
+}
+
+.animate-line .h2-title::before {
+  right: -80vw;
+}
+
+.h2-title::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  right: -280vw;
+  bottom: -10px;
+  height: 3px;
+  background: -o-linear-gradient(183deg, #84b403 0, rgba(250, 248, 248, 0.01) 100%);
+  background: linear-gradient(267deg, #84b403 0, rgba(250, 248, 248, 0.01) 100%);
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.title-car {
+  margin-left: 247px;
+}
+
+.pt-104 {
+  padding-top: 104.2px;
+}
+
+.car-accident__logo {
+  height: 121px;
+  width: 121px;
+}
+
+.h3-title {
+  font-family: "montserret";
+  font-size: 30px;
+  font-weight: 700;
+  color: #4e0003;
+  line-height: 25px;
+}
+
+.car-accident_text {
+  font-family: "montserret";
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+  color: #707070;
+}
+
+.car-accident__link {
+  font-weight: 700;
+  color: #84b403;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.section-did-you-know {
+  background: linear-gradient(267deg, #e6e6e6 0, rgba(250, 248, 248, 0.01) 16%);
+}
+
+.number {
+  position: absolute;
+  font-family: "montserret";
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 133px;
+  text-align: left;
+  color: #84b403;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  top: -12%;
+  left: 2px;
+}
+
+.bold-text {
+  font-weight: bolder;
+  color: #4e0003;
+  font-size: 20px;
+  line-height: 25px;
+}
+.li-item {
+  font-size: 20px;
+  line-height: 25px;
+  color: #707070;
+  list-style-type: square;
+}
+.p-text {
+  font-size: 20px;
+  line-height: 25px;
+  color: #707070;
+}
+
+.img-cover {
+  height: 588px;
+}
+
+.img-cover__png {
+  max-width: 100%;
+  object-fit: cover;
+  margin-right: -30%;
+  overflow-x: visible;
+}
