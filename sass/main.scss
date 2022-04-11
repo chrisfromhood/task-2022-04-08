@@ -120,7 +120,19 @@ $primary: #c29938;
 }
 
 .section-did-you-know {
-  background: linear-gradient(267deg, #e6e6e6 0, rgba(250, 248, 248, 0.01) 16%);
+  background: #e6e6e6;
+}
+
+.h2__did-you-know {
+  position: relative;
+  font-family: "montserret";
+  font-size: 35px;
+  line-height: 25px;
+  font-weight: 700;
+  text-align: left;
+  color: #84b403;
+  margin-left: 308px;
+  padding: 22px 0;
 }
 
 .number {
@@ -165,4 +177,5 @@ $primary: #c29938;
   object-fit: cover;
   margin-right: -30%;
   overflow-x: visible;
+  border: 1px solid #4e0003;
 }
