@@ -6,6 +6,7 @@ $primary: #c29938;
 .section-title__wrapper {
   margin-top: 60px;
   margin-bottom: 140px;
+  padding-bottom: 60px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -26,9 +27,9 @@ $primary: #c29938;
   justify-content: center;
 }
 
-.h2-upper__span {
+.car-accidents-upper__span {
   position: relative;
-  font-family: "montserret";
+  font-family: "Montserrat";
   font-size: 20px;
   line-height: 27px;
   text-align: left;
@@ -36,11 +37,11 @@ $primary: #c29938;
   text-transform: uppercase;
 }
 
-.animate-line .h2-upper__span::before {
+.animate-line .car-accidents-upper__span::before {
   left: -80vw;
 }
 
-.h2-upper__span::before {
+.car-accidents-upper__span::before {
   content: "";
   position: absolute;
   width: 100vw;
@@ -54,20 +55,20 @@ $primary: #c29938;
   transition: 1s all;
 }
 
-.h2-title {
+.car-accidents-title__h2 {
   position: relative;
-  font-family: "montserret";
+  font-family: "Montserrat";
   font-size: 40px;
   line-height: 53px;
   text-align: left;
   color: #4e0003;
 }
 
-.animate-line .h2-title::before {
+.animate-line .car-accidents-title__h2::before {
   right: -80vw;
 }
 
-.h2-title::before {
+.car-accidents-title__h2::before {
   content: "";
   position: absolute;
   width: 100vw;
@@ -81,29 +82,50 @@ $primary: #c29938;
   transition: 0.5s all;
 }
 
-.title-car {
-  margin-left: 247px;
-}
-
-.pt-104 {
+.car-accidents__items {
   padding-top: 104.2px;
 }
 
-.car-accident__logo {
-  height: 121px;
-  width: 121px;
+.car-accident__block {
+  padding-bottom: 30px;
 }
 
-.h3-title {
-  font-family: "montserret";
+.car-accident__logo {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.car-accident__logo--1 {
+  max-width: 121px;
+}
+.car-accident__logo--2 {
+  max-width: 129px;
+}
+.car-accident__logo--3 {
+  max-width: 86px;
+}
+.car-accident__logo--4 {
+  max-width: 113px;
+}
+.car-accident__logo--5 {
+  max-width: 130px;
+}
+.car-accident__logo--6 {
+  max-width: 124px;
+}
+
+.car-accident__h3 {
   font-size: 30px;
   font-weight: 700;
   color: #4e0003;
   line-height: 25px;
 }
 
-.car-accident_text {
-  font-family: "montserret";
+.car-accident__text {
+  font-family: "Montserrat";
   font-size: 20px;
   line-height: 25px;
   text-align: left;
@@ -115,18 +137,17 @@ $primary: #c29938;
   color: #84b403;
 }
 
-.pb-30 {
-  padding-bottom: 30px;
-}
+//SECTION DID YOU KNOW
 
 .section-did-you-know {
-  background: hsla(0, 0, 90, 26%);
+  background: rgba(230, 230, 230, 0.26);
   position: relative;
+  font-family: "Montserrat";
 }
 
 .h2__did-you-know {
   position: absolute;
-  font-family: "montserret";
+  font-family: "Montserrat";
   font-size: 35px;
   line-height: 25px;
   font-weight: 700;
@@ -147,16 +168,13 @@ $primary: #c29938;
 
 .number {
   position: absolute;
-  font-family: "montserret";
+  font-family: "Montserrat";
   font-size: 100px;
   font-weight: 500;
   line-height: 133px;
   text-align: left;
   padding-left: 12px;
   color: #84b403;
-  display: flex;
-  justify-content: end;
-  align-items: flex-end;
   top: -22px;
   left: 0px;
 }
@@ -209,6 +227,11 @@ $primary: #c29938;
 /* BELOW 1200px (Desktops) */
 /**************************/
 @media only screen and (max-width: 1200px) {
+  .car-accident__logo {
+    justify-content: start;
+    margin: 0;
+    padding-bottom: 12px;
+  }
   .h2__did-you-know {
     position: relative;
     top: 0;
@@ -224,7 +247,7 @@ $primary: #c29938;
   }
 
   .img-cover__png {
-    width: 96%;
+    width: 98%;
   }
 
   .p-text {
@@ -232,7 +255,7 @@ $primary: #c29938;
   }
 
   .border-around {
-    width: 100%;
+    width: 103%;
     height: 92%;
     top: 7%;
     left: -12px;
@@ -251,9 +274,9 @@ $primary: #c29938;
     left: 115px;
   }
 
-  .mobile-view {
-    display: flex;
-    flex-direction: column-reverse;
+  .p-text {
+    line-height: 23px;
+    font-weight: bold;
   }
 
   .section-did-you-know {
